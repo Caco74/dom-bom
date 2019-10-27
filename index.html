@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Registro Estudiantes</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7">
+          <h1>Registro Estudiantes</h1>
+          <form id="nuevo-estudiante">
+            <div class="form-group">
+              <label for="codigo-estudiante">Código</label>
+              <input type="text" id="codigo-estudiante" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="nombre-estudiante">Nombre</label>
+              <input type="text" id="nombre-estudiante" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="nota-estudiante">Nota</label>
+              <input type="text" id="nota-estudiante" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Registrar Estudiante">
+              <button id="promedio-estudiante">Promedio Estudiante</button>
+              <button id="nota-mayor">Nota Mayor</button>
+              <button id="nota-menor">Nota Menor</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-5">
+          <div id="tabla-estudiantes">
+            <h1>Listado de Estudiantes</h1>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Código</th>
+                  <th>Nombre</th>
+                  <th>Nota</th>
+                </tr>
+              </thead>
+              <tbody id="estudiante-tabla"></tbody>
+            </table>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
